@@ -169,11 +169,10 @@
             <plugin>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>maven-bundle-plugin</artifactId>
-                <configuration>
-                    <instructions>
-                        <Import-Package>*, javax.ws.rs.core</Import-Package>
-                    </instructions>
-                </configuration>
+                <executions>
+
+                    <execution><id>osgi-bundle</id><phase>none</phase></execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
